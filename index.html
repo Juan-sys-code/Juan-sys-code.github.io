@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Profesional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        html { scroll-behavior: smooth; } /* Esto hace que el salto sea suave */
+        body { 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+            background-color: #f8f5f0;
+            background-image: radial-gradient(circle at 10% 20%, rgba(253, 239, 132, 0.2) 0%, transparent 40%),
+                              radial-gradient(circle at 90% 80%, rgba(173, 216, 230, 0.2) 0%, transparent 40%);
+        }
+        .glass-card { background: rgba(255, 255, 255, 0.6); backdrop-filter: blur(10px); border-radius: 32px; border: 1px solid rgba(255,255,255,0.8); }
+        .project-card { border-radius: 24px; overflow: hidden; transition: transform 0.3s ease; }
+        .project-card:hover { transform: translateY(-8px); }
+        .nav-pill { background: rgba(255, 255, 255, 0.8); padding: 8px 20px; border-radius: 100px; font-size: 14px; font-weight: 600; }
+    </style>
+</head>
+<body class="text-slate-900">
+
+    <nav class="fixed top-0 left-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-slate-100">
+    <div class="max-w-6xl mx-auto px-6 h-20 flex justify-between items-center">
+        
+        <div class="text-sm font-bold tracking-widest uppercase text-slate-800">
+            <a href="#inicio" class="hover:text-orange-500 transition-colors">TU NOMBRE COMPLETO</a>
+        </div>
+
+        <div class="flex gap-8 text-sm font-semibold text-slate-600">
+            <a href="#inicio" class="hover:text-slate-900 transition-colors">Sobre mí</a>
+            <a href="#experiencia" class="hover:text-slate-900 transition-colors">Experiencia</a>
+            <a href="#proyectos" class="hover:text-slate-900 transition-colors">Proyectos</a>
+            <a href="#contacto" class="hover:text-slate-900 transition-colors">Contacto</a>
+        </div>
+        
+    </div>
+</nav>
+
+    <main class="max-w-6xl mx-auto px-6 pt-32 pb-20 space-y-24">
+        
+        <section id="inicio" class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+            <div class="lg:col-span-2 space-y-6">
+                <div class="inline-block bg-orange-100 text-orange-700 px-4 py-1 rounded-full text-xs font-bold">● Disponible para colaborar</div>
+                <h1 class="text-5xl md:text-7xl font-bold tracking-tight">
+                    Desarrollador Web enfocado en crear <span class="text-slate-400 italic">experiencias modernas y útiles.</span>
+                </h1>
+                <p class="text-lg text-slate-600 max-w-xl">Soy desarrollador web con pasión por el diseño limpio y funcional. Transformo ideas en productos digitales escalables.</p>
+                <div class="flex flex-wrap gap-4 pt-4">
+                    <a href="#proyectos" class="bg-[#eab308] text-white px-8 py-4 rounded-full font-bold shadow-lg hover:scale-105 transition">Ver proyectos destacados</a>
+                    <a href="#contacto" class="bg-white border border-slate-200 px-8 py-4 rounded-full font-bold hover:bg-slate-50 transition">Hablar conmigo</a>
+                </div>
+            </div>
+            <div class="glass-card p-8 space-y-6">
+                <div>
+    <p class="text-xs font-bold text-slate-400 uppercase">Rol Actual</p>
+    <p class="font-semibold text-blue-600 underline">
+        <a href="https://masdeportv.es/" target="_blank" class="hover:text-blue-800 transition-colors">
+            Desarrollo web en RadioMarca
+        </a>
+    </p>
+</div>
+                <div><p class="text-xs font-bold text-slate-400 uppercase">Especialidad</p><p class="font-semibold">Frontend & Backend</p></div>
+                <div><p class="text-xs font-bold text-slate-400 uppercase">Aprendiendo</p><p class="font-semibold">Next.js & AI Apps</p></div>
+            </div>
+        </section>
+<section class="glass-card p-10 lg:p-16 grid grid-cols-1 lg:grid-cols-12 gap-12">
+    
+    <div class="lg:col-span-7 space-y-6">
+        <h2 class="text-3xl font-bold tracking-tight text-slate-800">Perfil profesional</h2>
+        
+        <div class="space-y-4 text-slate-600 leading-relaxed text-lg">
+            <p>
+                Soy desarrollador web especializado en la creación de ecosistemas digitales que no solo se ven bien, sino que **convierten visitas en clientes**. Con una sólida formación técnica y un enfoque obsesivo por el detalle, ayudo a marcas y empresas a escalar su presencia online mediante soluciones robustas, escalables y orientadas a resultados.
+            </p>
+            <p>
+                Mi metodología de trabajo integra el desarrollo **Frontend** moderno con arquitecturas **Backend** eficientes. No solo escribo código; diseño experiencias de usuario (UX) fluidas que cargan en milisegundos. Domino herramientas punteras como **Next.js**, **React** y **WordPress**, lo que me permite adaptar la tecnología a la necesidad real de cada negocio, ya sea una landing page de alto impacto o una plataforma web compleja.
+            </p>
+            <p>
+                A lo largo de mi trayectoria, me he especializado en transformar problemas técnicos en interfaces intuitivas. Mi objetivo es que la tecnología sea invisible para el usuario final, permitiendo que el mensaje de tu marca destaque por encima de todo.
+            </p>
+        </div>
+
+        <div class="pt-6">
+            <h3 class="text-xl font-bold mb-4 text-slate-800 italic">¿Cómo trabajo?</h3>
+            <p class="text-slate-600 mb-6">
+                Trabajo con una metodología orientada a resultados: definición de objetivos claros, planificación técnica meticulosa, ejecución por fases y un control de calidad riguroso antes de cada despliegue.
+            </p>
+            <div class="flex flex-wrap gap-4">
+                <div class="bg-white/50 border border-white px-4 py-2 rounded-2xl shadow-sm">
+                    <span class="text-orange-500 font-bold">●</span> UI Clara y moderna
+                </div>
+                <div class="bg-white/50 border border-white px-4 py-2 rounded-2xl shadow-sm">
+                    <span class="text-orange-500 font-bold">●</span> Rendimiento Web rápido
+                </div>
+                <div class="bg-white/50 border border-white px-4 py-2 rounded-2xl shadow-sm">
+                    <span class="text-orange-500 font-bold">●</span> Diseño 100% Responsivo
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="lg:col-span-5 flex flex-col justify-center">
+        <h3 class="text-xl font-bold mb-6 text-slate-800">Stack actual</h3>
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+            <div class="bg-white p-4 rounded-3xl border border-slate-50 flex flex-col items-center shadow-sm">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" class="w-8 h-8 mb-2">
+                <span class="text-[10px] font-bold text-slate-500 uppercase">React</span>
+            </div>
+            <div class="bg-white p-4 rounded-3xl border border-slate-50 flex flex-col items-center shadow-sm">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg" class="w-8 h-8 mb-2">
+                <span class="text-[10px] font-bold text-slate-500 uppercase">Next.js</span>
+            </div>
+            <div class="bg-white p-4 rounded-3xl border border-slate-50 flex flex-col items-center shadow-sm">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/wordpress/wordpress-plain.svg" class="w-8 h-8 mb-2">
+                <span class="text-[10px] font-bold text-slate-500 uppercase">WordPress</span>
+            </div>
+            <div class="bg-white p-4 rounded-3xl border border-slate-50 flex flex-col items-center shadow-sm">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" class="w-8 h-8 mb-2">
+                <span class="text-[10px] font-bold text-slate-500 uppercase">TypeScript</span>
+            </div>
+            <div class="bg-white p-4 rounded-3xl border border-slate-50 flex flex-col items-center shadow-sm">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original.svg" class="w-8 h-8 mb-2">
+                <span class="text-[10px] font-bold text-slate-500 uppercase">Tailwind</span>
+            </div>
+            <div class="bg-white p-4 rounded-3xl border border-slate-50 flex flex-col items-center shadow-sm">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" class="w-8 h-8 mb-2">
+                <span class="text-[10px] font-bold text-slate-500 uppercase">Node.js</span>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="experiencia" class="space-y-8">
+    <h2 class="text-4xl font-bold italic">Experiencia profesional</h2>
+    
+    <div class="glass-card p-10 border-l-8 border-orange-400 space-y-6">
+        <div class="flex justify-between items-start flex-wrap gap-4">
+            <div>
+                <span class="text-xs font-bold text-orange-500 uppercase tracking-widest">Estado: Activo / Actualidad</span>
+                <h3 class="text-2xl font-bold mt-1 text-slate-800">Desarrollador Full Stack & Diseñador UI</h3>
+            </div>
+            <div class="bg-white/50 px-4 py-2 rounded-2xl text-sm font-semibold border border-white/80">
+                Proyectos Freelance & Colaboraciones
+            </div>
+        </div>
+
+        <p class="text-slate-600 leading-relaxed text-lg">
+            Actualmente me dedico al diseño y desarrollo de soluciones web completas, abarcando desde la concepción de la interfaz (UI) hasta la lógica del servidor. Mi trabajo se centra en optimizar el **rendimiento**, la **accesibilidad** y la **usabilidad** para garantizar que cada producto sea intuitivo y rápido en cualquier dispositivo.
+        </p>
+
+        <div class="space-y-4">
+            <h4 class="font-bold text-slate-700 flex items-center gap-2">
+                <span class="w-2 h-2 bg-orange-400 rounded-full"></span> 
+                Responsabilidades clave:
+            </h4>
+            <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 text-slate-600 text-sm ml-4">
+                <li class="flex items-center gap-2">✅ Desarrollo de interfaces modernas con <strong>React</strong> y <strong>Next.js</strong>.</li>
+                <li class="flex items-center gap-2">✅ Maquetación avanzada utilizando <strong>Tailwind CSS</strong> y animaciones fluidas.</li>
+                <li class="flex items-center gap-2">✅ Gestión de bases de datos y lógica de servidor con <strong>Node.js</strong>.</li>
+                <li class="flex items-center gap-2">✅ Despliegue y control de versiones mediante <strong>GitHub</strong> y Vercel.</li>
+            </ul>
+        </div>
+
+        <hr class="border-slate-200">
+
+        <div class="space-y-4">
+            <h4 class="font-bold text-slate-700">Tecnologías e idiomas de programación:</h4>
+            <div class="flex flex-wrap gap-2">
+                <span class="bg-orange-50 text-orange-700 px-3 py-1 rounded-lg text-xs font-bold border border-orange-100">HTML5 / CSS3</span>
+                <span class="bg-yellow-50 text-yellow-700 px-3 py-1 rounded-lg text-xs font-bold border border-yellow-100">JAVASCRIPT (ES6+)</span>
+                <span class="bg-blue-50 text-blue-700 px-3 py-1 rounded-lg text-xs font-bold border border-blue-100">TYPESCRIPT</span>
+                <span class="bg-sky-50 text-sky-700 px-3 py-1 rounded-lg text-xs font-bold border border-sky-100">REACT.JS</span>
+                <span class="bg-slate-800 text-white px-3 py-1 rounded-lg text-xs font-bold">NEXT.JS</span>
+                <span class="bg-indigo-50 text-indigo-700 px-3 py-1 rounded-lg text-xs font-bold border border-indigo-100">PHP / LARAVEL</span>
+                <span class="bg-green-50 text-green-700 px-3 py-1 rounded-lg text-xs font-bold border border-green-100">NODE.JS</span>
+                <span class="bg-purple-50 text-purple-700 px-3 py-1 rounded-lg text-xs font-bold border border-purple-100">WORDPRESS / CMS</span>
+                <span class="bg-red-50 text-red-700 px-3 py-1 rounded-lg text-xs font-bold border border-red-100">GIT / GITHUB</span>
+            </div>
+        </div>
+    </div>
+</section>
+        <section id="proyectos" class="space-y-8">
+            <h2 class="text-4xl font-bold italic">Proyectos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="project-card bg-gradient-to-br from-amber-700 to-amber-900 p-8 text-white h-80 flex flex-col justify-end">
+                    <span class="bg-white/20 w-fit px-3 py-1 rounded text-xs mb-4 uppercase">Next.js</span>
+                    <h3 class="text-2xl font-bold">Radio Marca Córdoba</h3>
+                    <p class="text-white/80 mt-2 mb-6 text-sm">Web corporativa y app de Radio Marca Córdoba para mostrar y escuhar en directo todos los programas</p>
+                    <a href="https://masdeportv.es/" target="_blank" class="bg-white/20 px-6 py-2 rounded-full w-fit font-bold hover:bg-white/40 inline-block text-center">Ver sitio</a>
+                </div>
+                <div class="project-card bg-gradient-to-br from-teal-700 to-teal-900 p-8 text-white h-80 flex flex-col justify-end">
+                    <span class="bg-white/20 w-fit px-3 py-1 rounded text-xs mb-4 uppercase">JavaScript</span>
+                    <h3 class="text-2xl font-bold">Blogomusas</h3>
+                    <p class="text-white/80 mt-2 mb-6 text-sm">Pagina web de Blogomusas donde puedes saber información de lo que se dedica y entrar en sus estrategias de Marketing </p>
+                    <a href="https://blogomusas.com/" target="_blank" class="bg-white/20 px-6 py-2 rounded-full w-fit font-bold hover:bg-white/40 inline-block text-center">Ver sitio</a>
+
+                </div>
+                <div class="project-card bg-gradient-to-br from-teal-700 to-teal-900 p-8 text-white h-80 flex flex-col justify-end">
+                    <span class="bg-white/20 w-fit px-3 py-1 rounded text-xs mb-4 uppercase">FrontEnd</span>
+                    <h3 class="text-2xl font-bold">ARS Elite Tecnificacion de porteros</h3>
+                    <p class="text-white/80 mt-2 mb-6 text-sm">Pagina web de ARS Elite Tecnificación de Porteros donde puedes ver toda su experencia y poder acceder a sus clases</p>
+                    <a href="http://arselitetecnificaciondeporteros.es/" target="_blank" class="bg-white/20 px-6 py-2 rounded-full w-fit font-bold hover:bg-white/40 inline-block text-center">Ver sitio</a>
+
+                </div>
+            </div>
+        </section>
+
+ <section id="contacto" class="glass-card p-12 text-center space-y-6">
+    <h2 class="text-4xl font-bold">¿Tienes un proyecto en mente?</h2>
+    <p class="text-slate-600 font-medium">Si quieres mejorar tu web o lanzar una nueva, hablemos.</p>
+    
+    <div class="flex flex-wrap justify-center gap-4">
+        <a href="mailto:infokodova@gmail.com" 
+           class="bg-white px-6 py-3 rounded-xl border border-slate-100 font-semibold shadow-sm hover:bg-slate-50 transition flex items-center gap-2">
+           📧 infokodova@gmail.com
+        </a>
+
+        <a href="https://www.linkedin.com/in/juan-prados-cantarero-5222512a3/" 
+           target="_blank" 
+           class="bg-white px-6 py-3 rounded-xl border border-slate-100 font-semibold shadow-sm hover:bg-slate-50 transition flex items-center gap-2">
+           🔗 LinkedIn
+        </a>
+
+        <a href="https://wa.me/34660257873" 
+           target="_blank" 
+           class="bg-[#fdf3d7] px-6 py-3 rounded-xl border border-yellow-200 font-semibold shadow-sm hover:bg-yellow-100 transition flex items-center gap-2">
+           📱 +34 660 25 78 73
+        </a>
+    </div>
+</section>
+
+    </main>
+
+    <footer class="text-center pb-10 text-slate-400 text-sm">
+        © 2026 Juan Prados Cantarero - Portfolio Profesional
+    </footer>
+
+</body>
+</html>
